@@ -1,0 +1,31 @@
+{
+"clear sky":{
+    "sp":"despejado",
+    "img": "cloud-computing.png"
+},
+"few clouds": {
+    "sp":"pocas nubes"
+},
+"scattered clouds":{
+    "sp":"nubes dispersas"
+},
+"broken clouds": {
+    "sp":"muy nuboso"
+},
+"shower rain":{
+    "sp":"lluvia"
+},
+"rain": {
+    "sp":"lluvia con sol"
+},
+"thunderstorm":{
+    "sp":"tormenta"
+},
+"snow":{
+    "sp":"nieve"
+},
+"mist":{
+    "sp": "niebla"
+}
+
+}

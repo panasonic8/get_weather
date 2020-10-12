@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+       
+        <ul>
+            <li><a href="https://openweathermap.org/">weather api docs</a></li>
+            <li><a href="https://cloud.google.com/maps-platform/?hl=es&utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_432573225305-ADGP_Hybrid+%7C+AW+SEM+%7C+BKWS+~+Google+Maps+API+BMM-KWID_43700053361875350-aud-905774763988:kwd-299558369886-userloc_1003325&utm_term=KW_%2Bapi%20%2Bgoogle%20%2Bmap-ST_%2Bapi+%2Bgoogle+%2Bmap&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyZoaSMlFJGxaeAJlFOS8ERXb4X4zFaJ5XtyUwB07ivLMuMSLmYsyaMaApFMEALw_wcB">google maps api docs</a></li>
+            
+        </ul>
+    </nav>
+<div class="panels">
+<button class="btn1" onclick="yoursite('yourweather.html')"><h1>tu ubicación</h1></button>
+
+<button class="btn2" onclick="yoursite('city.html')"><h1>elegir ciudad</h1></button>
+<button class="btn3" onclick="yoursite('coords.html')"><h1>elegir coordenadas</h1></button>
+</div>
+
+<h1 class="title">acerca de esta app</h1>
+<div class="atr">
+<img src="icons/temperature.png" alt="">
+<h2>temperatura</h2>
+<p>La app no solamente da el valor de la temperatura, también el de otras variables como la presión, la humedad, la temperatura máxima y mínima.</p>
+</div>
+
+<div class="atr">
+<img src="icons/map.png" alt="">
+<h2>ubicación</h2>
+<p>Muestra tu ubicación actual, o la ubicación que tu escogiste a través de un mapa propiedad de google maps</p>
+</div>
+
+<div class="atr">
+<img src="icons/input.png" alt="">
+<h2>diferentes entradas de datos</h2>
+<p>acepta entradas de coordenadas y la ciudad que quieres buscar</p>
+</div>
+
+<div class="atr">
+<img src="icons/save.png" alt="">
+<h2>historial</h2>
+<p>la información de tu coordenadas o la ciudad, serán guardadas en localstorage para que no sea nescesario buscarlas de nuevo.</p>
+</div>
+
+<div class="release"></div>
+
+<script>
+
+let myrequest = new Request('weathericons.json');
+function yoursite(page){
+    window.open(page);
+}
+
+
+</script>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
